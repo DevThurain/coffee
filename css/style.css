@@ -1,0 +1,135 @@
+/* Common Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Typography */
+h1, h2 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+}
+
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: #a16030;
+    border-color: #a16030;
+}
+
+.btn-primary:hover {
+    background-color: #8b522a;
+    border-color: #8b522a;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    background-color: #8b522a !important;
+    border-color: #8b522a !important;
+    box-shadow: 0 0 0 0.2rem rgba(161, 96, 48, 0.25) !important;
+}
+
+.btn {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/coffee_intro.png') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Section */
+#menu img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Products Page */
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card {
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Page */
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/coffee_intro.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: -50px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #a16030;
+    box-shadow: 0 0 0 0.2rem rgba(161, 96, 48, 0.25);
+}
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info i {
+    color: #a16030;
+    margin-right: 10px;
+}

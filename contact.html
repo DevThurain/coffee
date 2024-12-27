@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Beans - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Card Image */
+        .carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Coffee Beans</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <div class="contact-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead">We'd love to hear from you!</p>
+        </div>
+    </div>
+
+    <section id="location-carousel" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Locations</h2>
+            <div id="locationCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/coffee_location_1.jpg" class="d-block w-100" alt="Location 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Downtown Cafe</h5>
+                            <p>Experience the best coffee in the heart of the city.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/coffee_location_2.jpg" class="d-block w-100" alt="Location 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seaside Coffeehouse</h5>
+                            <p>Relax by the waves with your favorite brew.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/coffee_location_3.jpg" class="d-block w-100" alt="Location 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mountain Retreat</h5>
+                            <p>A serene escape with freshly brewed coffee.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#locationCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#locationCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <div class="container py-5 mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="contact-form">
+                    <h2 class="mb-4">Send us a Message</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Subject">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h3 class="mb-4">Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Brew City</p>
+                    <p><i class="fas fa-phone"></i> +1 555-555-5555</p>
+                    <p><i class="fas fa-envelope"></i> contact@coffeebeans.com</p>
+                    <h4 class="mt-4 mb-3">Business Hours</h4>
+                    <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+                    <p>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Coffee Beans. All rights reserved.</p>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+
+</html>
