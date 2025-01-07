@@ -19,7 +19,17 @@ h4 {
 p {
     font-weight: 300;
 }
+.navbar {
+    box-shadow: -1px -2px 3px 3px #00000029;
+}
+.navbar-brand {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #a56a43 !important;
+  font-weight: bold;
+  padding: 0 9px;
 
+}
 .font-weight-bold {
     font-weight: 600 !important;
 }
@@ -94,7 +104,7 @@ p {
 
 /* Contact Page */
 .contact-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/coffee_intro.png');
+    background: linear-gradient(rgb(0 0 0 / 24%), rgb(0 0 0 / 53%)), url(../img/coffee_intro.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -133,3 +143,56 @@ p {
     color: #a16030;
     margin-right: 10px;
 }
+.plan-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+.plan-card p{
+    font-size: 14px;
+}
+.plan-card .price{
+    font-size: 30px;
+}
+.plan-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.plan-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #a16030;
+}
+.plan-price {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+.btn-subscribe {
+    margin-top: 15px;
+}
+.custom-icon{
+    height: 30px;
+}
+.logo{
+    height: 50px;
+    padding: 0 8px;
+}
+
+
+/* Apply styles for the scroll bar */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust width for a thicker scrollbar */
+    height: 4px; /* For horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #a16030; /* Scrollbar thumb color */
+    border-radius: 10px; /* Round corners */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+  }
+  
