@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Beans - Contact Us</title>
+    <title>Bean Boutique - Contact Us</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -13,6 +13,8 @@
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/add.to.cart.js"></script>
+
     <style>
         /* Card Image */
         .carousel-item img {
@@ -23,9 +25,30 @@
 </head>
 
 <body>
+    <!-- Modal for Cart Items -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <ul id="cartItemsList" class="list-group">
+            </ul>
+            </div>
+            <div class="modal-footer">
+            <button type="button" id="clearCartBtn" class="btn btn-secondary" data-dismiss="modal">Clear</button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
-        <a class="navbar-brand" href="#"><img class="logo" src="./img/coffeebean2.png"> Coffee Beans</a>
+        <a class="navbar-brand" href="#"><img class="logo" src="img/favicon.png"> Bean Boutique</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,13 +60,11 @@
                       Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="products.html">Coffee Selection</a>
+                        <a class="dropdown-item" href="equipments.html">Brewing Equipment</a>
                     </div>
                   </li>
-                <li class="nav-item px-3 font-weight-bolder"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item px-3 font-weight-bolder"><a class="nav-link" href="news.html">Events</a></li>
                 <li class="nav-item px-3 font-weight-bolder"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li class="nav-item px-3 font-weight-bolder"><a class="nav-link active" href="plan.html">Special Offers</a></li>
                 <li class="nav-item px-3 font-weight-bolder"><div class="d-flex text-right cart-wrap"> <img src="img/shopping-cart.png" class="d-block shopping-cart" alt="Location 1"><span class="badge badge-secondary">6</span></div></li>
@@ -110,7 +131,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Coffee Beans. All rights reserved.</p>
+        <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
     </footer>
 
     <!-- Font Awesome for icons -->

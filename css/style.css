@@ -147,6 +147,12 @@ p {
     color: #a16030;
     margin-right: 10px;
 }
+
+.location img {
+    height: 400px;
+    object-fit: cover;
+}
+/* pricing */
 .plan-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -233,3 +239,25 @@ p {
         padding: 10px 0;
     }
   }
+  
+
+/* news page */
+@media (max-width: 768px) {
+#coffee-jumbotron h1 {
+    font-size: 2rem;
+}
+
+#coffee-jumbotron p {
+    font-size: 0.8rem;
+}
+
+#coffee-jumbotron .btn {
+    font-size: 0.8rem;
+}
+}
+
+.news img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
