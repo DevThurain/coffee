@@ -28,7 +28,7 @@ p {
   color: #a56a43 !important;
   font-weight: bold;
   padding: 0 9px;
-
+  text-transform: uppercase;
 }
 .font-weight-bold {
     font-weight: 600 !important;
@@ -49,6 +49,10 @@ p {
     background-color: #8b522a !important;
     border-color: #8b522a !important;
     box-shadow: 0 0 0 0.2rem rgba(161, 96, 48, 0.25) !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(161, 96, 48) !important;
 }
 
 .btn {
@@ -214,4 +218,10 @@ p {
   .cart-wrap {
     position: relative;
     top:6px;
+  }
+  @media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
   }
